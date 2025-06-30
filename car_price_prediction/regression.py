@@ -157,4 +157,4 @@ y_pred = w0 + X_test.dot(w)
 score = rmse(y_test, y_pred)
 
 with open('linear_regression_model.pkl', 'wb') as f_out:
-    pickle.dump((train_linear_regression_reg, prepare_X, y_pred), f_out)
+    pickle.dump(( w0, w, categories), f_out)

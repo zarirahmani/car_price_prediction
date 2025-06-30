@@ -1,0 +1,16 @@
+{
+    "engine_hp": 300,
+    "engine_cylinders": 4,
+    "highway_mpg": 30,
+    "city_mpg": 22,
+    "popularity": 2300,
+    "year": 2017,
+    "number_of_doors": 2,
+    "make": "ford",
+    "engine_fuel_type": "regular_unleaded",
+    "transmission_type": "automatic",
+    "driven_wheels": "front_wheel_drive",
+    "market_category": "crossover",
+    "vehicle_size": "midsize",
+    "vehicle_style": "wagon"
+}
