@@ -34,12 +34,12 @@ def prepare_X(cars):
     X = cars_num.values
     return X
 
-app = Flask("predict")
+app = Flask("price")
 @app.route("/predict", methods=["POST"])  # I want to access this function using GET method and the endpoint will be /ping.
 def predict():
     request.get_json()  # Get the JSON data from the request
     car = request.json  # Get the JSON data from the request
-    X = prepare_X(car)
+    X = prepare_X(car)   # For the ideal project, I will put it in a separate function and also the other two statements.
     y_pred = w0 + X.dot(w)
     price = np.expm1(y_pred[0])
 
