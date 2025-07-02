@@ -50,3 +50,22 @@ We don't need a virtual environment in the docker because we already have a virt
 
 Now, I need to expose the port 9696
 
+docker run -it --rm -p 9696:9696 zoomcamp-test
+
+
+Deploying the container into the cloud: AWS Elastic Beanstalk ML Zoomcamp 5.7
+Commands: 
+pipenv install awsebcli --dev
+
+pipenv shell
+
+eb
+
+
+
+- installing the eb engine_cylinders
+
+- Running eb locally 
+
+- Deploying the model
+
