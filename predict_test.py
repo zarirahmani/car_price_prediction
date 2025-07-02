@@ -1,7 +1,8 @@
 
 import requests
 
-url = 'http://localhost:9696/predict'
+host = 'price-prediction-env.eba-dgzmkutf.us-west-2.elasticbeanstalk.com'
+url = f'http://{host}/predict'
 
 car = {
     "engine_hp": 300,
