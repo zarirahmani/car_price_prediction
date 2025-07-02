@@ -9,7 +9,7 @@ How to enter the environment: pipenv shell
 To exit, use the command: exit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Environment management: Docker   ML Z
+Environment management: Docker   ML Zoomcamp 5.7
 - Why we need a docker?
 Docker isolates the entire application from others in our computer in a way that they live in a completely different environments UBUNTU 20.04 and other application on Perl Amazon.
 All applications are hosted by a host machine for example Ubuntu 18.04
@@ -68,9 +68,7 @@ python predict_test.py   #test it in a separate terminal
 
 eb create price-prediction-env
 
-- installing the eb engine_cylinders
-
-- Running eb locally 
-
-- Deploying the model
+I installed AWS elasticbeanstalk CLI in the virtual environment
+I ran the service with elasticbeanstalk locally with docker
+Then I deployed the model
 
