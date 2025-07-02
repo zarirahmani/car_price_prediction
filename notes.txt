@@ -1,0 +1,52 @@
+How to create a pipenv:  ML Zoomcamp 5.5
+
+pip install pipenv
+pipenv install numpy scikit-learn==0.24.2 flask gunicorn
+
+When we clone a repository, we just need to use the command: pipenv install
+All the libraries and their versions are in pipfile.lock 
+How to enter the environment: pipenv shell
+To exit, use the command: exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Environment management: Docker   ML Z
+- Why we need a docker?
+Docker isolates the entire application from others in our computer in a way that they live in a completely different environments UBUNTU 20.04 and other application on Perl Amazon.
+All applications are hosted by a host machine for example Ubuntu 18.04
+We can deploy our service such as car price service to the Docker container cloud
+
+- Running a Python image with Docker
+Go to https://hub.docker.com/_/python
+I will use "slim-bullseye", slim means optimised. It is Debian-based so we can use opt-get in Ubuntu
+To run, use this command:
+
+"docker run -it --rm python:3.12.11-slim-bullseye"
+
+Run the image: -it means to have access to the terminal, --rm means remove it from our system after we run the image
+When we run it we go into the Python terminal.
+We can change the terminal by adding --entrypoint=bash
+
+"docker run -it --rm --entrypoint=bash python:3.12.11-slim-bullseye"
+
+apt-get install wget
+Whatever we do in this image stays here and doesn't have any impact on the system on the host, only the docker container will be affected. 
+
+- Dockerfile: I create a docker file by creating a file and naming it "Dockerfile"
+In the dockerfile, the first thing that I specify is the base image: python:3.12.11-slim-bullseye this is what we base our image on
+WORKDIR /app  it creates directory that doesn't exist.
+
+- Building a docker image
+This command will build an image: 
+
+"docker build -t zoomcamp-test ."
+
+- Running a docker image
+Then run: 
+
+"docker run -it --rm --entrypoint=bash zoomcamp-test"
+
+we will go to the app with this command, we have pipfile and pipfile.lock inside the app
+We don't need a virtual environment in the docker because we already have a virtual environment.
+
+Now, I need to expose the port 9696
+
