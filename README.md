@@ -3,7 +3,8 @@
 
 ## 🛻 Car Price Prediction Model
 
-In this project, I have designed a regression model to predict the price of used cars based on features such as age of the car, mileage, make, engine horsepower, et. which included both numerical and categorical variables. The goal is to build a regression model that generalises well on unseen data. The model was trained and validated on a dataset of used car listings and optimised using regularisation and hyperparameter tuning techniques. The data was obtained from [the Kaggle competition](https://www.kaggle.com/datasets/CooperUnion/cardataset). The data is also provided in this repository under car_price_prediction folder. The Python notebook is named "regression".
+In this project, I have designed a regression model to predict the price of used cars based on features such as age of the car, mileage, make, engine horsepower, et. which included both numerical and categorical variables. The goal is to build a regression model that generalises well on unseen data. The model was trained and validated on a dataset of used car listings and optimised using regularisation and hyperparameter tuning techniques. The data was obtained from [the Kaggle competition](https://www.kaggle.com/datasets/CooperUnion/cardataset) and is available in this repository under car_price_prediction folder. The Python notebook is named "regression".
+After training and evaluating the model, I saved the model using Pickle library and to make the model accessible across platforms without rerunning the code, I deployed it as a web service using Flask, creating API endpoints for prediction requests. I containerized the application using docker and deployed the Docker container to the Cloud service AWS.
 
 ### 🪜 Key steps included:
 
